@@ -1,0 +1,58 @@
+Setting up to compile C++ on Linux/Unix
+
+How you set up to compile C++ programs depends on whether you are using Windows or Linux/Unix. This page describes the approach to use if you have a Linux/Unix machine. If you have a Windows machine, read this page instead. 
+
+To establish that your Linux/Unix system has the correct C++ compiler installed, at the command prompt type this: 
+
+g++ -v
+    
+If your system is set up correctly, this command will launch the compiler executable and print its version. If an error message is printed instead, you will have to consult your documentation to make sure the compiler is installed and set up correctly. 
+
+When I compile on Linux and other versions of Unix, I use an executable shell file named gccp with this content: 
+
+#/bin/sh
+
+echo compiling C++ using -ansi -pedantic-errors -Wall
+g++ -ansi -pedantic-errors -Wall $1 $2 $3
+    
+If you want this shell file, simply copy it from this page and save it on your system in a file named gccp. Be sure to (1) make the file executable, and (2) place it in an accessible directory. Because I cannot know which version of Unix you are running, I can't really be more specific. 
+
+This shell file sets up the most strict ANSI standard compliance level, making it necessary for the programmer to pay attention to many compatibility and style issues. There may even be some incompatibilities within the C++ compiler's own library routines, so this shell file may not always result in a successful compile even if your program is flawless. But in general, it is a good idea to establish high standards as a student, to become accustomed to good programming style. 
+
+If you execute the compiler directly, without using the shell file, its behavior is more relaxed. This may sometimes be necessary. Do it like this: 
+
+g++ temp.cpp
+    
+Now set up a convenient data directory in which to place your programs. Create a file named temp.cpp with this content: 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "Hello World!" << endl;
+	return 0;
+}
+    
+Again, you should be able to copy this little program from this page, and use a text editor to save it as “temp.cpp.” 
+
+Move to the directory in which temp.cpp is located, and type this: 
+
+gccp temp.cpp
+    
+If you have not made any errors, the program will compile uneventfully, and a program file named “a.out” will be created in the same directory. 
+
+To execute your program, type “./a.out” (your system may require slightly different syntax) and press Enter. The program should run, and print “Hello world!” on the display. 
+
+This series of actions confirms that you have acquired a C++ compiler and it is working properly. 
+
+Linux and other versions of Unix usually have many worthwhile programming editors available, many of which can be customized to suit your requirements. But, again, because I cannot know which Unix you are running, I can't be specific. Be sure to look into the many editors that are available — they save a great deal of effort in programming. 
+
+And learn how to create a variety of executable shell files — they save a great deal of time on Unix systems. 
+Fonte:
+	http://arachnoid.com/cpptutor/setup_unix.html
+
+Compila se usando o shell com o seguinte comando:
+./gccp.sh temp.cpp
+
