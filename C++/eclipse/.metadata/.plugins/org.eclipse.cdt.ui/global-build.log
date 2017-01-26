@@ -1,0 +1,50 @@
+16:49:49 **** Build of configuration Debug for project learning ****
+make all 
+Building file: ../aula3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"aula3.d" -MT"aula3.d" -o "aula3.o" "../aula3.cpp"
+../aula3.cpp:8:19: fatal error: iostrem: No such file or directory
+subdir.mk:18: recipe for target 'aula3.o' failed
+compilation terminated.
+make: *** [aula3.o] Error 1
+16:50:30 **** Incremental Build of configuration Debug for project learning ****
+make all 
+Building file: ../aula3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"aula3.d" -MT"aula3.d" -o "aula3.o" "../aula3.cpp"
+../aula3.cpp: In function ‘int main()’:
+../aula3.cpp:13:21: error: expected ‘;’ before ‘endl’
+  cout << "C++/nC++" endl;
+                     ^
+subdir.mk:18: recipe for target 'aula3.o' failed
+make: *** [aula3.o] Error 1
+16:51:00 **** Incremental Build of configuration Debug for project learning ****
+make all 
+Building file: ../aula3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"aula3.d" -MT"aula3.d" -o "aula3.o" "../aula3.cpp"
+Finished building: ../aula3.cpp
+ 
+Building target: learning
+Invoking: Cross G++ Linker
+g++  -o "learning"  ./aula3.o   
+Finished building target: learning
+ 
+16:51:06 **** Incremental Build of configuration Debug for project learning ****
+make all 
+make: Nothing to be done for 'all'.
+16:51:36 **** Incremental Build of configuration Debug for project learning ****
+make all 
+Building file: ../aula3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"aula3.d" -MT"aula3.d" -o "aula3.o" "../aula3.cpp"
+Finished building: ../aula3.cpp
+ 
+Building target: learning
+Invoking: Cross G++ Linker
+g++  -o "learning"  ./aula3.o   
+Finished building target: learning
+ 
+16:51:43 **** Incremental Build of configuration Debug for project learning ****
+make all 
+make: Nothing to be done for 'all'.
