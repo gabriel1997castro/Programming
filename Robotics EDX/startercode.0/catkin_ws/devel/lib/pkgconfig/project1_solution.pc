@@ -1,0 +1,8 @@
+prefix=/home/gabriel/Desktop/Programming/Robotics EDX/startercode.0/catkin_ws/devel
+
+Name: project1_solution
+Description: Description of project1_solution
+Version: 0.0.0
+Cflags: -I/home/gabriel/Desktop/Programming/Robotics EDX/startercode.0/catkin_ws/devel/include
+Libs: -L/home/gabriel/Desktop/Programming/Robotics EDX/startercode.0/catkin_ws/devel/lib 
+Requires: rospy message_runtime

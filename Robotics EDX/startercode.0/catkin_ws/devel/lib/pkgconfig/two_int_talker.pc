@@ -1,0 +1,8 @@
+prefix=/home/gabriel/Desktop/Programming/Robotics EDX/startercode.0/catkin_ws/devel
+
+Name: two_int_talker
+Description: Description of two_int_talker
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gabriel/Desktop/Programming/Robotics EDX/startercode.0/catkin_ws/devel/lib 
+Requires: message_runtime
