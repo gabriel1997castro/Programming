@@ -1,0 +1,26 @@
+# include <stdio.h>
+
+int main(){
+	int dia1, hora1, minuto1, segundo1;
+	int dia2, hora2, minuto2, segundo2;
+
+	scanf("Dia %d",dia1); 
+	scanf("%d : %d : %d", hora1, minuto1, segundo1);
+
+	scanf("Dia %d",dia2); 
+	scanf("%d : %d : %d", hora2, minuto2, segundo2);
+
+	if (segundo1>segundo2)
+		segundo	= segundo2+ (60 + segundo1);
+	else
+		segundo = segundo2 - segundo1;
+
+	if (segundo2>=segundo1 && minuto2>=minuto1)
+		minuto = minuto2 - minuto1;
+	if (segundo2<segundo1  && minuto2>minuto1)
+		minuto = minuto2 - minuto1 - 1;
+	printf ("%d", segundo)
+	printf ("%d", minuto)
+	return 0;
+}
+
